@@ -1,0 +1,36 @@
+AllCops:
+  Exclude:
+    - script/**/*
+    - config/**/*
+    - Guardfile
+    - db/**/*
+    - bin/**/*
+    - spec/**/*
+    - !ruby/regexp /old_and_unused\.rb$/
+
+Rails:
+  Enabled: true
+
+Documentation:
+  Enabled: false
+
+LineLength:
+  Max: 140
+
+Rails: 
+  Enabled: true
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 15
+
+Metrics/ClassLength:
+  Max: 150
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StabbyLambdaParentheses:
+  Enabled: false
