@@ -1,0 +1,10 @@
+Description:
+    Creates a service object of an arbitrary type.
+
+Example:
+    rails generate service_object service gmail_api
+
+    This will create:
+        app/services
+        app/services/gmail_api.rb
+        spec/services/gmail_api_spec.rb
