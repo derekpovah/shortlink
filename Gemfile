@@ -25,6 +25,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'thinking-sphinx'
 gem 'time_difference'
 gem 'turbolinks', '~> 5'
+gem 'typhoeus'
 gem 'uglifier', '>= 1.3.0'
 gem 'whenever', require: false
 
@@ -51,6 +52,7 @@ group :test do
   gem 'capybara', '>= 2.15', '< 4.0'
   gem 'chromedriver-helper'
   gem 'selenium-webdriver'
+  gem 'vcr'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
