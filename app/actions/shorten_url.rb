@@ -11,6 +11,6 @@ class ShortenUrl
   private
 
   def generate_hash_from_shortlink
-    Base32.encode(Digest::MD5.digest("#{@url}#{DateTime.now.strftime('%Q')}"))[0..4]
+    Base32.encode(Digest::MD5.digest("#{@url}#{Time.now.to_f}"))[0..4]
   end
 end
