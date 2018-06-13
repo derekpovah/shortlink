@@ -6,11 +6,11 @@ class ServiceObjectGenerator < Rails::Generators::Base
   source_root File.expand_path('templates', __dir__)
 
   def copy_pattern
-    template 'service_object.rb', generated_file_path
+    template 'service_object.rb.erb', generated_file_path
   end
 
   def copy_pattern_test
-    template "service_object_#{test_suite_name}.rb", generated_test_file_path
+    template "service_object_#{test_suite_name}.rb.erb", generated_test_file_path
   end
 
   private
