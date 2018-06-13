@@ -154,6 +154,7 @@ GEM
       ruby_parser (~> 3.5)
     i18n (1.0.1)
       concurrent-ruby (~> 1.0)
+    immutable-struct (2.3.0)
     innertube (1.1.0)
     io-like (0.3.0)
     jbuilder (2.7.0)
@@ -349,6 +350,7 @@ DEPENDENCIES
   figaro
   groupdate
   haml-rails
+  immutable-struct
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   mysql2 (>= 0.4.4, < 0.6.0)
