@@ -4,7 +4,7 @@ class ShortenUrl
   end
 
   def shorten!
-    @shortlink.update_attributes(link_hash: generate_hash_from_shortlink)
+    @shortlink.update(link_hash: generate_hash_from_shortlink)
     true
   end
 
