@@ -1,0 +1,72 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dilbert.com
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Typhoeus - https://github.com/typhoeus/typhoeus
+      Expect:
+      - ''
+  response:
+    status:
+      code: 503
+      message: Service Unavailable
+    headers:
+      Content-Type:
+      - text/html; charset=UTF-8
+      Content-Length:
+      - '2586'
+      Connection:
+      - close
+      P3P:
+      - CP="CAO PSA OUR"
+      Expires:
+      - Thu, 01 Jan 1970 00:00:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+    body:
+      encoding: UTF-8
+      string: "<html>\n<head>\n  <title>LVUSD Bypass</title>\n  <link rel=\"stylesheet\"
+        type=\"text/css\" href=\"https://apache.lvusd.org/hr/stylesheets/style.css\"
+        />\n  <div id=\"header\">\n    <p>LVUSD - Website Blocked</p>\n  </div>\n<head>\n<title>Web
+        Page Blocked</title>\n<meta http-equiv=\"Content-Type\" content=\"text/html;
+        charset=utf-8\">\n<META HTTP-EQUIV=\"PRAGMA\" CONTENT=\"NO-CACHE\">\n<meta
+        name=\"viewport\" content=\"initial-scale=1.0\">\n<style>\n  #content {\n
+        \   border:3px solid#aaa;\n    background-color:#fff;\n    margin:1.2em;\n
+        \   padding:1.2em;\n    font-family:Tahoma,Helvetica,Arial,sans-serif;\n    font-size:1em;\n
+        \ }\n  h1 {\n    font-size:1.2em;\n    font-weight:bold;\n    color:#196390;\n
+        \ }\n  b {\n    font-weight:normal;\n    color:#196390;\n  }\n        form
+        td, form input {\n                font-size: 1em;\n                font-weight:
+        bold;\n        }\n        #formtable {\n                height: 100%;\n                width:
+        100%;\n        }\n        #formtd {\n                vertical-align: middle;\n
+        \       }\n        #formdiv {\n                margin-left: auto;\n                margin-right:
+        auto;\n        }\n</style>\n<script type=\"text/javascript\">\nfunction pwdCheck()
+        {\n    if(document.getElementById(\"pwd\")) {\n        document.getElementById(\"continueText\").innerHTML
+        = \"If you require access to this page, have an administrator enter the override
+        password here:\";\n    }   \n}\n</script>\n</head>\n<body bgcolor=\"#e7e8e9\">\n<div
+        id=\"content\">\n<h1>Web Page Blocked</h1>\n<p>Access to the web page you
+        were trying to visit has been blocked. </p>\n<p><b>User:</b> 10.2.0.162 </p>\n<p><b>URL:</b>
+        dilbert.com/ </p>\n<p><b>Category:</b> Custom - Block URL </p>\n\n<hr>\n\n\n<br>\n<a
+        href=\"#\" onclick=\"history.back();return false;\">Return to previous page</a>\n</div>\n\n<!--\n<p
+        id=\"continueText\">If you feel this page has been incorrectly blocked, you
+        may click Continue to proceed to the page. However, this action will be logged.</p>\n<div
+        id=\"formdiv\">\n    <pan_form/>\n<style>\n#dError {\n    background-color:
+        #FFFF88;\n    color: #E10000;\n    margin-top: 10px;\n    padding-top: 10px;\n
+        \   padding-bottom: 10px;\n    margin-left: 10px;\n    margin-right: 10px;\n
+        \   padding-left: 10px;\n    padding-right: 10px;\n    border: 1px solid #999999;\n
+        \   font-weight: bold;\n    overflow: auto;\n}\n</style>\n-->\n\n\n\n\n</body>\n\n</div>\n
+        \       <font size=1> <left=10px> \n       <center> \n    <a href=\"http://www.lvusd.org\"
+        target=\"_blank\">Las Virgenes Unified</a>         |        <a href=\"http://whd.lvusd.org\"
+        target=\"_blank\">WHD Support</a>\n        <br>\n    <a>User: 10.2.0.162</a>
+        |  <a>Site: dilbert.com/</a> \n    </center>\n</div>\n\n\n</html>\n"
+    http_version: '1.1'
+    adapter_metadata:
+      effective_url: http://dilbert.com/
+  recorded_at: Wed, 13 Jun 2018 21:54:15 GMT
+recorded_with: VCR 4.0.0
