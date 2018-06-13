@@ -5,7 +5,7 @@ class UrlValidator < ActiveModel::EachValidator
 
   def url_valid?(url)
     uri = URI.parse(url) rescue false
-    return false unless uri.kind_of?(URI::HTTP) || uri.kind_of?(URI::HTTPS) 
+    return false unless uri.is_a?(URI::HTTP) || uri.is_a?(URI::HTTPS)
     PublicSuffix.valid?(url.split('/').last, default_rule: nil)
   end
 end
