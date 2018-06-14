@@ -134,6 +134,7 @@ GEM
     ffi (1.9.25)
     figaro (1.1.1)
       thor (~> 0.14)
+    geokit (1.13.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
     groupdate (4.0.1)
@@ -351,6 +352,7 @@ DEPENDENCIES
   devise
   devise_ldap_authenticatable
   figaro
+  geokit
   groupdate
   haml-rails
   immutable-struct
