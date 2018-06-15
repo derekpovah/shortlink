@@ -60,6 +60,7 @@ GEM
       autoprefixer-rails (>= 6.0.3)
       popper_js (>= 1.12.9, < 2)
       sass (>= 3.5.2)
+    browser (2.5.3)
     bugsnag (6.7.3)
       concurrent-ruby (~> 1.0)
     builder (3.2.3)
@@ -335,6 +336,7 @@ DEPENDENCIES
   base32
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.1.1)
+  browser
   bugsnag
   byebug
   capistrano (~> 3.6)
