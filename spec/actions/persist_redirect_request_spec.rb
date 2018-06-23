@@ -1,8 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe PersistRedirectRequest, type: :action do
-  before(:each) do
+  before(:all) do
     Request = ImmutableStruct.new(:referrer, :remote_ip, :user_agent)
+  end
+  
+  before(:each) do
     request = Request.new(referrer: 'http://www.lvusd.org', remote_ip: '156.3.109.1', user_agent: 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36')
     @shortlink = Shortlink.create(url: 'http://google.com', name: 'google')
     persist_redirect_request = PersistRedirectRequest.new(request: request, shortlink: @shortlink)
